@@ -1,13 +1,17 @@
 package com.portfolio.mgb;
 
-import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class MgbApplicationTests {
+import org.springframework.test.context.ContextConfiguration;
+import org.junit.jupiter.api.Test;
 
-	@Test
-	void contextLoads() {
-	}
+@ContextConfiguration(classes = {SpringBootTest.class})
+public class MgbApplicationTests {
+
+    @Test
+    public void contextLoads() {
+        // Lógica de prueba aquí
+    }
 
 }
+

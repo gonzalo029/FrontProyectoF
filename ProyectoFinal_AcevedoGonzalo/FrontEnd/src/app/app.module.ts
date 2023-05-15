@@ -13,6 +13,17 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HysComponent } from './componente/hys/hys.component';
 import { ProyectoComponent } from './componente/proyecto/proyecto.component';
 import { FooterComponent } from './componente/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './componente/home/home.component';
+import { LoginComponent } from './componente/login/login.component';
+import { FormsModule } from '@angular/forms';
+import { NewExperienciaComponent } from './componente/experiencia/new-experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './componente/experiencia/edit-experiencia/edit-experiencia.component';
+import { NeweducacionComponent } from './componente/educacion/neweducacion.component';
+import { EditeducacionComponent } from './componente/educacion/editeducacion.component';
+import { EditSkillComponent } from './componente/hys/edit-skill.component';
+import { NewSkillComponent } from './componente/hys/new-skill.component';
+import { EditAcercaDeComponent } from './componente/acerca-de/edit-acerca-de.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +36,24 @@ import { FooterComponent } from './componente/footer/footer.component';
     EducacionComponent,
     HysComponent,
     ProyectoComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    LoginComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent,
+    NeweducacionComponent,
+    EditeducacionComponent,
+    EditSkillComponent,
+    NewSkillComponent,
+    EditAcercaDeComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
